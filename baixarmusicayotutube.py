@@ -3,6 +3,7 @@ import os
 
 yt = str(input('URL da sua playlist: '))
 playlist = Playlist(yt);print(playlist)
+print('há '+str(len(playlist))+' musicas na sua lista')
 for url in playlist:
     audio = YouTube(url)
     audio = audio.streams.filter(only_audio=True)[0]
