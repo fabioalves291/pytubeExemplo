@@ -1,3 +1,4 @@
+#! /usr/bin/python3
 from pytube import YouTube, Playlist
 import os
 
